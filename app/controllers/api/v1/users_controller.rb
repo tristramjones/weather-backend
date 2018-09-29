@@ -7,20 +7,35 @@ module Api
         render json: @users
       end
 
+      def show
+        @user = User.find(params[:id])
+        @user_obj = {user: @user.name, id: @user.id, cities: @user.cities}
+        render json: @user_obj, status: 200
+      end
+
+      def new
+        @user = User.new
+      end
+
       def create
         @user = User.create(user_params)
         render json: @user, status: 201
       end
 
-      def show
+      def edit
         @user = User.find(params[:id])
-        render json: @user, status: 200
+      end
+
+      def update
+        @user = User.find(params[:id])
+        @user.update(user_params)
+        render json: @user
       end
 
       private
 
       def user_params
-        params.permit(:name)
+        params.require(:name).permit(:name)
       end
 
     end

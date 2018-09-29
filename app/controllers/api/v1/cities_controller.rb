@@ -7,14 +7,18 @@ module Api
         render json: @cities
       end
 
-      def create
-        city = City.create(city_params)
-        render json: city, status: 201
-      end
-
       def show
         @city = City.find(params[:id])
         render json: @city, status: 200
+      end
+
+      def new
+        @city = City.new
+      end
+
+      def create
+        @city = City.create(city_params)
+        render json: @city, status: 201
       end
 
       def destroy
@@ -26,7 +30,7 @@ module Api
       private
 
       def city_params
-        params.permit(:name, :state)
+        params.require(:name).permit(:name)
       end
 
     end
