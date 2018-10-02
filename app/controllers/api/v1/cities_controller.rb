@@ -30,7 +30,7 @@ module Api
       private
 
       def city_params
-        params.require(:name).permit(:name)
+        params.require(:city).permit(:name, :user_id)
       end
 
     end
