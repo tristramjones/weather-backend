@@ -9,7 +9,7 @@ The purpose of this project was to gain experience building Rails backends that 
 - Postgres
 
 ## Setup
-- Clone down this repo and run bundle exec.
+- Clone down this repo and run `bundle install`.
 - Once this has completed and all dependencies are installed, run `rails s`.
 - Visit [http://localhost:3000/](http://localhost:3000/). You'll only see the Rails welcome screen but this indicates that the http request was successful and the API is ready to serve the client.
 - Now, visit the [Weather client](https://github.com/Jessicalong627/weather-app) and follow the setup instructions to get the Weather app's frontend running.
@@ -32,6 +32,6 @@ For example:
 - The operating system.
 
 ### Pull requests
-Pull Requests are always welcome. Ensure that you've run `bundle exec` before creating an issue or submitting a pull request. Ensure the PR description clearly describes the problem and solution. It should include:
+Pull Requests are always welcome. Ensure that you've run `bundle install` before creating an issue or submitting a pull request. Ensure the PR description clearly describes the problem and solution. It should include:
 - The operating system on which you tested.
 - The relevant issue number, if applicable.
