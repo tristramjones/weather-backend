@@ -1,3 +1,5 @@
+![weather-app](https://user-images.githubusercontent.com/39240428/47953194-c1abde00-df3f-11e8-947a-84026ebaa16a.png)
+
 # Weather backend
 A current and 5-day weather forecast app for people on the go.
 
