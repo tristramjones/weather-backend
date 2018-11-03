@@ -1,7 +1,7 @@
-![weather-app](https://user-images.githubusercontent.com/39240428/47953194-c1abde00-df3f-11e8-947a-84026ebaa16a.png)
-
 # Weather backend
 A current and 5-day weather forecast app for people on the go.
+
+![weather-app](https://user-images.githubusercontent.com/39240428/47953194-c1abde00-df3f-11e8-947a-84026ebaa16a.png)
 
 ## Motivation
 The purpose of this project was to gain experience building Rails backends that can be integrated with React clients.
